@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Lmao 💗", page_icon="💗", layout="centered")
+st.set_page_config(page_title="lmao 💗", page_icon="💗", layout="centered")
 
 # ---------- Black & Pink theme for the Streamlit page ----------
 # (For a permanent theme also create .streamlit/config.toml, see bottom of file)
@@ -25,7 +25,7 @@ st.markdown(
 
 # ---------- The turtle heart, re-created in a canvas ----------
 # Same math as the turtle code:
-#   for scale in range(11, 17): for i in range(120): draw" at the heart curve
+#   for scale in range(11, 17): for i in range(120): draw "lmao" at the heart curve
 APP_HTML = """
 <style>
   html, body { margin:0; background:#000; font-family: Arial, sans-serif; }
@@ -79,7 +79,7 @@ function fitCanvas() {
 fitCanvas();
 window.addEventListener('resize', fitCanvas);
 
-/* ---------------- PLAY: draws the heart of "I love you" ---------------- */
+/* ---------------- PLAY: draws the heart of "lmao" ---------------- */
 function play() {
   if (timer) clearInterval(timer);
   fitCanvas();
@@ -97,10 +97,10 @@ function play() {
     const x = 16 * Math.pow(Math.sin(angle), 3) * scale;
     const y = (13 * Math.cos(angle) - 5 * Math.cos(2 * angle)
               - 2 * Math.cos(3 * angle) - Math.cos(4 * angle)) * scale;
-    ctx.fillText('I love you', cx + x * k, cy - y * k);   // canvas y is flipped
+    ctx.fillText('lmao', cx + x * k, cy - y * k);   // canvas y is flipped
     i++;
     if (i >= 120) { i = 0; scale++; }
-    if (scale > 16) { clearInterval(timer); msg.textContent = '💗 I love you 💗'; }
+    if (scale > 16) { clearInterval(timer); msg.textContent = '💗 lmao 💗'; }
   }, 9);
   msg.textContent = '';
 }
