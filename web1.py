@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="I love you 💗", page_icon="💗", layout="centered")
+st.set_page_config(page_title="Lmao 💗", page_icon="💗", layout="centered")
 
 # ---------- Black & Pink theme for the Streamlit page ----------
 # (For a permanent theme also create .streamlit/config.toml, see bottom of file)
@@ -25,7 +25,7 @@ st.markdown(
 
 # ---------- The turtle heart, re-created in a canvas ----------
 # Same math as the turtle code:
-#   for scale in range(11, 17): for i in range(120): draw "I love you" at the heart curve
+#   for scale in range(11, 17): for i in range(120): draw" at the heart curve
 APP_HTML = """
 <style>
   html, body { margin:0; background:#000; font-family: Arial, sans-serif; }
